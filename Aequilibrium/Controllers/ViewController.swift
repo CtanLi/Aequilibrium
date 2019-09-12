@@ -47,11 +47,11 @@ class ViewController: UIViewController {
         APIService.shared.fetchGenericData(method: .post, urlString: createUrl, params: params, headers: APIEndPoints.authorizationHeader) { (result: CreateModel?, code) in
             if code == nil {
                 self.confirmationMessage.text = "New Transformer \(result?.name ?? "") Created"
+                 self.botName.text = String()
             } else {
                  self.confirmationMessage.text = "Transformer already exist please create another one"
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                     self.confirmationMessage.text = "Progress message goes here"
-                    self.botName.text = String()
                 })
             }
         }

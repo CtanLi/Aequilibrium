@@ -13,7 +13,8 @@ class BattleController: UIViewController {
     @IBOutlet weak var player1Image: UIImageView!
     @IBOutlet weak var player2Image: UIImageView!
     @IBOutlet weak var winnersView: UILabel!
-    
+    @IBOutlet weak var playerOne: UILabel!
+    @IBOutlet weak var playerTwo: UILabel!
     
     var fighters = [TransformerViewModel]()
     
@@ -27,6 +28,8 @@ class BattleController: UIViewController {
         if let firstImage = fighters.first?.tvm.team_icon, let secondImage = fighters.last?.tvm.team_icon {
             player1Image.loadImageUsingCacheWithURLString(urlString: firstImage)
             player2Image.loadImageUsingCacheWithURLString(urlString: secondImage)
+            playerOne.text = fighters.first?.tvm.name
+            playerTwo.text = fighters.last?.tvm.name
         }
     }
     
