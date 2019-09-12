@@ -1,0 +1,6 @@
+framework module Pods_Aequilibrium {
+  umbrella header "Pods-Aequilibrium-umbrella.h"
+
+  export *
+  module * { export * }
+}

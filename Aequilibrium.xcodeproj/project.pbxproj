@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		463A97D92327EFC20006C14B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A97D82327EFC20006C14B /* AppDelegate.swift */; };
+		463A97DB2327EFC20006C14B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A97DA2327EFC20006C14B /* ViewController.swift */; };
+		463A97DE2327EFC20006C14B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463A97DC2327EFC20006C14B /* Main.storyboard */; };
+		463A97E12327EFC20006C14B /* Aequilibrium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 463A97DF2327EFC20006C14B /* Aequilibrium.xcdatamodeld */; };
+		463A97E32327EFC40006C14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463A97E22327EFC40006C14B /* Assets.xcassets */; };
+		463A97E62327EFC40006C14B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463A97E42327EFC40006C14B /* LaunchScreen.storyboard */; };
+		463A97F12327EFC50006C14B /* AequilibriumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A97F02327EFC50006C14B /* AequilibriumTests.swift */; };
+		463A97FC2327EFC50006C14B /* AequilibriumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A97FB2327EFC50006C14B /* AequilibriumUITests.swift */; };
+		463A980A2327F0030006C14B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A98092327F0030006C14B /* APIService.swift */; };
+		463A980C2327F4660006C14B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A980B2327F4660006C14B /* Constant.swift */; };
+		463A980E2327F7AA0006C14B /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A980D2327F7AA0006C14B /* LaunchController.swift */; };
+		463A98102327FF4E0006C14B /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A980F2327FF4E0006C14B /* TokenModel.swift */; };
+		463A9812232954ED0006C14B /* CreateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A9811232954ED0006C14B /* CreateModel.swift */; };
+		463A981423297AC70006C14B /* TransformersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A981323297AC70006C14B /* TransformersController.swift */; };
+		463A981823297BB20006C14B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A981723297BB20006C14B /* Protocols.swift */; };
+		463A981A23297BCE0006C14B /* TransformerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A981923297BCE0006C14B /* TransformerCell.swift */; };
+		463A981C23297C780006C14B /* TransformerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A981B23297C780006C14B /* TransformerViewModel.swift */; };
+		463A981F2329B4820006C14B /* TransformerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A981E2329B4820006C14B /* TransformerModel.swift */; };
+		463A98212329C8250006C14B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A98202329C8250006C14B /* Extension.swift */; };
+		463A98232329EB5C0006C14B /* BattleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A98222329EB5C0006C14B /* BattleController.swift */; };
+		5AA8248D8B8B9461501E3341 /* Pods_AequilibriumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DAD1C106265E430C55DD26 /* Pods_AequilibriumUITests.framework */; };
+		76DA8BF85DFE20699FB358B4 /* Pods_Aequilibrium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE10160065E91792B090054 /* Pods_Aequilibrium.framework */; };
+		E52F82548699ACFCFDCB569E /* Pods_AequilibriumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B533E46DA54E03EA8FD820 /* Pods_AequilibriumTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		463A97ED2327EFC50006C14B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 463A97CD2327EFC20006C14B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 463A97D42327EFC20006C14B;
+			remoteInfo = Aequilibrium;
+		};
+		463A97F82327EFC50006C14B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 463A97CD2327EFC20006C14B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 463A97D42327EFC20006C14B;
+			remoteInfo = Aequilibrium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23DAD1C106265E430C55DD26 /* Pods_AequilibriumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AequilibriumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33EEF513BCB257620683F42F /* Pods-AequilibriumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AequilibriumUITests.debug.xcconfig"; path = "Target Support Files/Pods-AequilibriumUITests/Pods-AequilibriumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DE10160065E91792B090054 /* Pods_Aequilibrium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aequilibrium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463A97D52327EFC20006C14B /* Aequilibrium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aequilibrium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		463A97D82327EFC20006C14B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		463A97DA2327EFC20006C14B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		463A97DD2327EFC20006C14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		463A97E02327EFC20006C14B /* Aequilibrium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aequilibrium.xcdatamodel; sourceTree = "<group>"; };
+		463A97E22327EFC40006C14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		463A97E52327EFC40006C14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		463A97E72327EFC40006C14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463A97EC2327EFC50006C14B /* AequilibriumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AequilibriumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		463A97F02327EFC50006C14B /* AequilibriumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AequilibriumTests.swift; sourceTree = "<group>"; };
+		463A97F22327EFC50006C14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463A97F72327EFC50006C14B /* AequilibriumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AequilibriumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		463A97FB2327EFC50006C14B /* AequilibriumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AequilibriumUITests.swift; sourceTree = "<group>"; };
+		463A97FD2327EFC50006C14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463A98092327F0030006C14B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		463A980B2327F4660006C14B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		463A980D2327F7AA0006C14B /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
+		463A980F2327FF4E0006C14B /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		463A9811232954ED0006C14B /* CreateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateModel.swift; sourceTree = "<group>"; };
+		463A981323297AC70006C14B /* TransformersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersController.swift; sourceTree = "<group>"; };
+		463A981723297BB20006C14B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		463A981923297BCE0006C14B /* TransformerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCell.swift; sourceTree = "<group>"; };
+		463A981B23297C780006C14B /* TransformerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerViewModel.swift; sourceTree = "<group>"; };
+		463A981E2329B4820006C14B /* TransformerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerModel.swift; sourceTree = "<group>"; };
+		463A98202329C8250006C14B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		463A98222329EB5C0006C14B /* BattleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleController.swift; sourceTree = "<group>"; };
+		6340B4E1365EA3ABADFCB26E /* Pods-AequilibriumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AequilibriumUITests.release.xcconfig"; path = "Target Support Files/Pods-AequilibriumUITests/Pods-AequilibriumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		88FCF82E0B9AEE0B04471A8C /* Pods-AequilibriumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AequilibriumTests.release.xcconfig"; path = "Target Support Files/Pods-AequilibriumTests/Pods-AequilibriumTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D73F305BC8355793A33D0A7 /* Pods-Aequilibrium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aequilibrium.release.xcconfig"; path = "Target Support Files/Pods-Aequilibrium/Pods-Aequilibrium.release.xcconfig"; sourceTree = "<group>"; };
+		A9B533E46DA54E03EA8FD820 /* Pods_AequilibriumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AequilibriumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2111173562F0B5C71AE6C75 /* Pods-Aequilibrium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aequilibrium.debug.xcconfig"; path = "Target Support Files/Pods-Aequilibrium/Pods-Aequilibrium.debug.xcconfig"; sourceTree = "<group>"; };
+		F50C20F1534F590820F2A5D1 /* Pods-AequilibriumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AequilibriumTests.debug.xcconfig"; path = "Target Support Files/Pods-AequilibriumTests/Pods-AequilibriumTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		463A97D22327EFC20006C14B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76DA8BF85DFE20699FB358B4 /* Pods_Aequilibrium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463A97E92327EFC50006C14B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52F82548699ACFCFDCB569E /* Pods_AequilibriumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463A97F42327EFC50006C14B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA8248D8B8B9461501E3341 /* Pods_AequilibriumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		463A97CC2327EFC20006C14B = {
+			isa = PBXGroup;
+			children = (
+				463A97D72327EFC20006C14B /* Aequilibrium */,
+				463A97EF2327EFC50006C14B /* AequilibriumTests */,
+				463A97FA2327EFC50006C14B /* AequilibriumUITests */,
+				463A97D62327EFC20006C14B /* Products */,
+				B1C2C91B6966C3F4542C91E5 /* Pods */,
+				B562E57659A9C9BA7CE8E975 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		463A97D62327EFC20006C14B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				463A97D52327EFC20006C14B /* Aequilibrium.app */,
+				463A97EC2327EFC50006C14B /* AequilibriumTests.xctest */,
+				463A97F72327EFC50006C14B /* AequilibriumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		463A97D72327EFC20006C14B /* Aequilibrium */ = {
+			isa = PBXGroup;
+			children = (
+				463A9826232AA2B10006C14B /* Controllers */,
+				463A9825232AA2940006C14B /* Utility */,
+				463A9824232AA27F0006C14B /* Model */,
+				463A981D23297C7E0006C14B /* TransformersList */,
+				463A97D82327EFC20006C14B /* AppDelegate.swift */,
+				463A97DC2327EFC20006C14B /* Main.storyboard */,
+				463A97E22327EFC40006C14B /* Assets.xcassets */,
+				463A97E42327EFC40006C14B /* LaunchScreen.storyboard */,
+				463A97E72327EFC40006C14B /* Info.plist */,
+				463A97DF2327EFC20006C14B /* Aequilibrium.xcdatamodeld */,
+				463A980D2327F7AA0006C14B /* LaunchController.swift */,
+			);
+			path = Aequilibrium;
+			sourceTree = "<group>";
+		};
+		463A97EF2327EFC50006C14B /* AequilibriumTests */ = {
+			isa = PBXGroup;
+			children = (
+				463A97F02327EFC50006C14B /* AequilibriumTests.swift */,
+				463A97F22327EFC50006C14B /* Info.plist */,
+			);
+			path = AequilibriumTests;
+			sourceTree = "<group>";
+		};
+		463A97FA2327EFC50006C14B /* AequilibriumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				463A97FB2327EFC50006C14B /* AequilibriumUITests.swift */,
+				463A97FD2327EFC50006C14B /* Info.plist */,
+			);
+			path = AequilibriumUITests;
+			sourceTree = "<group>";
+		};
+		463A981D23297C7E0006C14B /* TransformersList */ = {
+			isa = PBXGroup;
+			children = (
+				463A981323297AC70006C14B /* TransformersController.swift */,
+				463A981923297BCE0006C14B /* TransformerCell.swift */,
+				463A981B23297C780006C14B /* TransformerViewModel.swift */,
+			);
+			path = TransformersList;
+			sourceTree = "<group>";
+		};
+		463A9824232AA27F0006C14B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				463A981E2329B4820006C14B /* TransformerModel.swift */,
+				463A980F2327FF4E0006C14B /* TokenModel.swift */,
+				463A9811232954ED0006C14B /* CreateModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		463A9825232AA2940006C14B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				463A98092327F0030006C14B /* APIService.swift */,
+				463A980B2327F4660006C14B /* Constant.swift */,
+				463A981723297BB20006C14B /* Protocols.swift */,
+				463A98202329C8250006C14B /* Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		463A9826232AA2B10006C14B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				463A97DA2327EFC20006C14B /* ViewController.swift */,
+				463A98222329EB5C0006C14B /* BattleController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B1C2C91B6966C3F4542C91E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2111173562F0B5C71AE6C75 /* Pods-Aequilibrium.debug.xcconfig */,
+				8D73F305BC8355793A33D0A7 /* Pods-Aequilibrium.release.xcconfig */,
+				F50C20F1534F590820F2A5D1 /* Pods-AequilibriumTests.debug.xcconfig */,
+				88FCF82E0B9AEE0B04471A8C /* Pods-AequilibriumTests.release.xcconfig */,
+				33EEF513BCB257620683F42F /* Pods-AequilibriumUITests.debug.xcconfig */,
+				6340B4E1365EA3ABADFCB26E /* Pods-AequilibriumUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B562E57659A9C9BA7CE8E975 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DE10160065E91792B090054 /* Pods_Aequilibrium.framework */,
+				A9B533E46DA54E03EA8FD820 /* Pods_AequilibriumTests.framework */,
+				23DAD1C106265E430C55DD26 /* Pods_AequilibriumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		463A97D42327EFC20006C14B /* Aequilibrium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463A98002327EFC50006C14B /* Build configuration list for PBXNativeTarget "Aequilibrium" */;
+			buildPhases = (
+				87A9B479BAC38291AA5E9AF0 /* [CP] Check Pods Manifest.lock */,
+				463A97D12327EFC20006C14B /* Sources */,
+				463A97D22327EFC20006C14B /* Frameworks */,
+				463A97D32327EFC20006C14B /* Resources */,
+				F64E660A221987E04BF5C501 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aequilibrium;
+			productName = Aequilibrium;
+			productReference = 463A97D52327EFC20006C14B /* Aequilibrium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		463A97EB2327EFC50006C14B /* AequilibriumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463A98032327EFC50006C14B /* Build configuration list for PBXNativeTarget "AequilibriumTests" */;
+			buildPhases = (
+				42628EA8DAEAE64BC25236F6 /* [CP] Check Pods Manifest.lock */,
+				463A97E82327EFC50006C14B /* Sources */,
+				463A97E92327EFC50006C14B /* Frameworks */,
+				463A97EA2327EFC50006C14B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				463A97EE2327EFC50006C14B /* PBXTargetDependency */,
+			);
+			name = AequilibriumTests;
+			productName = AequilibriumTests;
+			productReference = 463A97EC2327EFC50006C14B /* AequilibriumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		463A97F62327EFC50006C14B /* AequilibriumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463A98062327EFC50006C14B /* Build configuration list for PBXNativeTarget "AequilibriumUITests" */;
+			buildPhases = (
+				9EBFB9E0B052102337647FD9 /* [CP] Check Pods Manifest.lock */,
+				463A97F32327EFC50006C14B /* Sources */,
+				463A97F42327EFC50006C14B /* Frameworks */,
+				463A97F52327EFC50006C14B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				463A97F92327EFC50006C14B /* PBXTargetDependency */,
+			);
+			name = AequilibriumUITests;
+			productName = AequilibriumUITests;
+			productReference = 463A97F72327EFC50006C14B /* AequilibriumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		463A97CD2327EFC20006C14B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = aequilibrium;
+				TargetAttributes = {
+					463A97D42327EFC20006C14B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					463A97EB2327EFC50006C14B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 463A97D42327EFC20006C14B;
+					};
+					463A97F62327EFC50006C14B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 463A97D42327EFC20006C14B;
+					};
+				};
+			};
+			buildConfigurationList = 463A97D02327EFC20006C14B /* Build configuration list for PBXProject "Aequilibrium" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 463A97CC2327EFC20006C14B;
+			productRefGroup = 463A97D62327EFC20006C14B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				463A97D42327EFC20006C14B /* Aequilibrium */,
+				463A97EB2327EFC50006C14B /* AequilibriumTests */,
+				463A97F62327EFC50006C14B /* AequilibriumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		463A97D32327EFC20006C14B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463A97E62327EFC40006C14B /* LaunchScreen.storyboard in Resources */,
+				463A97E32327EFC40006C14B /* Assets.xcassets in Resources */,
+				463A97DE2327EFC20006C14B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463A97EA2327EFC50006C14B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463A97F52327EFC50006C14B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42628EA8DAEAE64BC25236F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AequilibriumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A9B479BAC38291AA5E9AF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aequilibrium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EBFB9E0B052102337647FD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AequilibriumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64E660A221987E04BF5C501 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aequilibrium/Pods-Aequilibrium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aequilibrium/Pods-Aequilibrium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aequilibrium/Pods-Aequilibrium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		463A97D12327EFC20006C14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463A98212329C8250006C14B /* Extension.swift in Sources */,
+				463A97DB2327EFC20006C14B /* ViewController.swift in Sources */,
+				463A9812232954ED0006C14B /* CreateModel.swift in Sources */,
+				463A97D92327EFC20006C14B /* AppDelegate.swift in Sources */,
+				463A981C23297C780006C14B /* TransformerViewModel.swift in Sources */,
+				463A981823297BB20006C14B /* Protocols.swift in Sources */,
+				463A98102327FF4E0006C14B /* TokenModel.swift in Sources */,
+				463A980C2327F4660006C14B /* Constant.swift in Sources */,
+				463A981A23297BCE0006C14B /* TransformerCell.swift in Sources */,
+				463A981423297AC70006C14B /* TransformersController.swift in Sources */,
+				463A980A2327F0030006C14B /* APIService.swift in Sources */,
+				463A980E2327F7AA0006C14B /* LaunchController.swift in Sources */,
+				463A97E12327EFC20006C14B /* Aequilibrium.xcdatamodeld in Sources */,
+				463A981F2329B4820006C14B /* TransformerModel.swift in Sources */,
+				463A98232329EB5C0006C14B /* BattleController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463A97E82327EFC50006C14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463A97F12327EFC50006C14B /* AequilibriumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463A97F32327EFC50006C14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463A97FC2327EFC50006C14B /* AequilibriumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		463A97EE2327EFC50006C14B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 463A97D42327EFC20006C14B /* Aequilibrium */;
+			targetProxy = 463A97ED2327EFC50006C14B /* PBXContainerItemProxy */;
+		};
+		463A97F92327EFC50006C14B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 463A97D42327EFC20006C14B /* Aequilibrium */;
+			targetProxy = 463A97F82327EFC50006C14B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		463A97DC2327EFC20006C14B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463A97DD2327EFC20006C14B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		463A97E42327EFC40006C14B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463A97E52327EFC40006C14B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		463A97FE2327EFC50006C14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		463A97FF2327EFC50006C14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		463A98012327EFC50006C14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2111173562F0B5C71AE6C75 /* Pods-Aequilibrium.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YH8GHTGE4A;
+				INFOPLIST_FILE = Aequilibrium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		463A98022327EFC50006C14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D73F305BC8355793A33D0A7 /* Pods-Aequilibrium.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YH8GHTGE4A;
+				INFOPLIST_FILE = Aequilibrium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		463A98042327EFC50006C14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50C20F1534F590820F2A5D1 /* Pods-AequilibriumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YH8GHTGE4A;
+				INFOPLIST_FILE = AequilibriumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AequilibriumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aequilibrium.app/Aequilibrium";
+			};
+			name = Debug;
+		};
+		463A98052327EFC50006C14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FCF82E0B9AEE0B04471A8C /* Pods-AequilibriumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YH8GHTGE4A;
+				INFOPLIST_FILE = AequilibriumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AequilibriumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aequilibrium.app/Aequilibrium";
+			};
+			name = Release;
+		};
+		463A98072327EFC50006C14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EEF513BCB257620683F42F /* Pods-AequilibriumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YH8GHTGE4A;
+				INFOPLIST_FILE = AequilibriumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AequilibriumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aequilibrium;
+			};
+			name = Debug;
+		};
+		463A98082327EFC50006C14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6340B4E1365EA3ABADFCB26E /* Pods-AequilibriumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YH8GHTGE4A;
+				INFOPLIST_FILE = AequilibriumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AequilibriumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aequilibrium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		463A97D02327EFC20006C14B /* Build configuration list for PBXProject "Aequilibrium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463A97FE2327EFC50006C14B /* Debug */,
+				463A97FF2327EFC50006C14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463A98002327EFC50006C14B /* Build configuration list for PBXNativeTarget "Aequilibrium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463A98012327EFC50006C14B /* Debug */,
+				463A98022327EFC50006C14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463A98032327EFC50006C14B /* Build configuration list for PBXNativeTarget "AequilibriumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463A98042327EFC50006C14B /* Debug */,
+				463A98052327EFC50006C14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463A98062327EFC50006C14B /* Build configuration list for PBXNativeTarget "AequilibriumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463A98072327EFC50006C14B /* Debug */,
+				463A98082327EFC50006C14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		463A97DF2327EFC20006C14B /* Aequilibrium.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				463A97E02327EFC20006C14B /* Aequilibrium.xcdatamodel */,
+			);
+			currentVersion = 463A97E02327EFC20006C14B /* Aequilibrium.xcdatamodel */;
+			path = Aequilibrium.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 463A97CD2327EFC20006C14B /* Project object */;
+}
